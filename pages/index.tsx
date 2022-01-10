@@ -6,7 +6,7 @@ const Home: NextPage = () => {
   const [name, setName] = useState("person");
 
   const changeName = (event: Event) => {
-    setName(event.target.value)
+    setName(event!.target.value)
   }
 
   return (
