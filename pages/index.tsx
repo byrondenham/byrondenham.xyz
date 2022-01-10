@@ -5,7 +5,7 @@ import { useState } from "react";
 const Home: NextPage = () => {
   const [name, setName] = useState("person");
 
-  const changeName = (event) => {
+  const changeName = (event: Event) => {
     setName(event.target.value)
   }
 
