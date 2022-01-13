@@ -12,7 +12,9 @@ const Home: NextPage = () => {
       <Head>
         <title>Byron Denham</title>
         <style>
-          background: #{bgColor}
+          body: {"\{"}
+            background: #{bgColor}
+          {"\}"}
         </style>
       </Head>
       <h1>Hello, {name}.</h1>
