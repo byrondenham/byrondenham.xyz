@@ -8,20 +8,18 @@ const Home: NextPage = () => {
   const [bgColor, setBgColor] = useState("ffffff")
 
   return (
-    <>
+    <div style={{
+      minHeight: "100%",
+      backgroundColor: `#${bgColor}`
+    }}>
       <Head>
         <title>Byron Denham</title>
-        <style>
-          body: {"\{"}
-            background: #{bgColor}
-          {"\}"}
-        </style>
       </Head>
       <h1>Hello, {name}.</h1>
       <h2>What is your name?</h2>
       <input type="text" onChange={e => setName(e.target.value)} />
       <button onClick={() => setBgColor(crypto.randomBytes(3).toString("hex"))}>Change colour</button>
-    </>
+    </div>
   );
 };
 
